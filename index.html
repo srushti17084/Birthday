@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Defines HTML5 document -->
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Happy Birthday 🎉</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts for stylish text -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Background birthday music -->
+<!-- autoplay = starts automatically, loop = repeats -->
+<audio id="bgMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Canvas used to draw confetti animation -->
+<canvas id="confetti"></canvas>
+
+<!-- Full-screen slideshow container -->
+<div class="slideshow">
+    <!-- Slideshow images -->
+<img src="11.jpg">
+<img src="9.jpg">
+<img src="8.jpg">
+<img src="3.jpg">
+<img src="2.jpg">
+<img src="6.jpg">
+<img src="2.jpg">
+<img src="5.jpg">
+<img src="4.jpg">
+<img src="1.jpg">
+<img src="10.jpg">
+
+</div>
+
+<!-- Main birthday card -->
+<div class="card">
+
+    <!-- Birthday name heading -->
+    <h1 class="name">
+        Happy Birthday, <span>Amreen Teacher</span> 🎂
+    </h1>
+
+    <!-- Age animation -->
+    <h2 class="age">
+         <span></span>✨🎂🎉🎊🌻⚘️🧿✨️🥳
+    </h2>
+
+    <!-- Birthday wishes message -->
+    <p class="message">
+        May your life be filled with love, laughter, success, and unforgettable memories.
+        You deserve all the happiness today and always 💕
+    </p>
+
+    <!-- Button to toggle music on/off -->
+    <button onclick="toggleMusic()">🔊 Music On / Off</button>
+</div>
+
+<!-- Linking JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
