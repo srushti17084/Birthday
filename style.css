@@ -169,7 +169,7 @@ button {
     .card {
         max-width: 90%;        /* Reduce width */
         padding: 20px;         /* Less inner space */
-        margin-top: 10vh;      /* Better vertical position */
+        margin-top: 30vh;      /* Better vertical position */
         border-radius: 20px;   /* Slightly smaller corners */
     }
 
