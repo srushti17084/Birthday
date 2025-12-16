@@ -51,7 +51,6 @@ body {
     z-index: -1;          /* Above slideshow */
 }
 
-/* Birthday card */
 .card {
     position: relative;
     z-index: 1;
@@ -65,10 +64,9 @@ body {
     box-shadow: 0 25px 45px rgba(255,105,180,0.4);
 
     /* NEW */
-    opacity: 0;                         /* Card hidden initially */
-    animation: cardFlash 1.5s ease-out forwards;
-    animation-delay: 6s;                /* Shows after images */
+    animation: cardAppearDisappear 16s infinite;
 }
+
 
 /* Name styling */
 .name {
@@ -113,16 +111,32 @@ button {
     to { text-shadow: 0 0 15px #ff69b4; }
 }
 
-/* Card flash-in animation */
-@keyframes cardFlash {
+/* Card appears at start and end */
+@keyframes cardAppearDisappear {
+    /* START: visible */
     0% {
-        opacity: 0;
-        transform: scale(0.8);
+        opacity: 1;
+        transform: scale(1);
     }
-    60% {
+
+    /* Fade out early */
+    15% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    /* Stay hidden during slideshow */
+    70% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    /* END: flash back in */
+    85% {
         opacity: 1;
         transform: scale(1.05);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
