@@ -163,47 +163,20 @@ button {
 }
 
 
-/* ================= MOBILE RESPONSIVE CARD ================= */
+/* ================= MOBILE: CARD BOTTOM CENTER ================= */
 @media (max-width: 768px) {
 
     .card {
-        max-width: 90%;        /* Reduce width */
-        padding: 20px;         /* Less inner space */
-        margin-top: 10vh;      /* Better vertical position */
-        border-radius: 20px;   /* Slightly smaller corners */
-    }
+        position: fixed;              /* Fix position on screen */
+        bottom: 20px;                 /* Stick to bottom */
+        left: 50%;                    /* Move to center horizontally */
+        transform: translateX(-50%);  /* Perfect horizontal centering */
 
-    .name {
-        font-size: 2rem;       /* Smaller heading */
-    }
-
-    .age {
-        font-size: 1.1rem;     /* Smaller subheading */
-    }
-
-    .message {
-        font-size: 0.9rem;     /* Smaller text */
-    }
-
-    button {
-        padding: 10px 22px;    /* Smaller button */
-        font-size: 0.9rem;
-    }
-}
-
-/* ================= MOBILE: CARD AT BOTTOM ================= */
-@media (max-width: 768px) {
-
-    .card {
-        position: fixed;          /* Fix card position */
-        bottom: 20px;             /* Distance from bottom */
-        left: 50%;
-        transform: translateX(-50%);
-        
-        max-width: 95%;           /* Almost full width */
-        margin: 0;                /* Remove auto margin */
+        max-width: 95%;               /* Responsive width */
         padding: 18px;
+        margin: 0;
         border-radius: 20px;
+        text-align: center;
     }
 
     .name {
