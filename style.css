@@ -71,7 +71,7 @@ body {
     box-shadow: 0 25px 45px rgba(255,105,180,0.4);
 
     /* NEW */
-    animation: cardAppearDisappear 16s infinite;
+    animation: cardAppearDisappear 40s infinite;
 }
 
 
