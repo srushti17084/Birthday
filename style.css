@@ -70,7 +70,6 @@ body {
     text-align: center;
     box-shadow: 0 25px 45px rgba(255,105,180,0.4);
 
-    /* NEW */
     animation: cardAppearDisappear 40s infinite;
 }
 
@@ -119,33 +118,40 @@ button {
 }
 
 /* Card appears at start and end */
+/* Card visible ONLY at start and end */
 @keyframes cardAppearDisappear {
-    /* START: visible for longer time */
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
 
-    /* Keep visible till 30% */
-    30% {
+    /* START: visible */
+    0% {
         opacity: 1;
         transform: scale(1);
     }
 
-    /* Fade out after start */
-    40% {
-        opacity: 0;
-        transform: scale(0.9);
+    /* Keep visible briefly at start */
+    10% {
+        opacity: 1;
+        transform: scale(1);
     }
 
-    /* Stay hidden during slideshow */
-    70% {
+    /* Immediately hide */
+    11% {
         opacity: 0;
-        transform: scale(0);
+        transform: scale(0.8);
     }
 
-    /* END: flash back in */
+    /* STRICTLY hidden during slideshow */
+    11% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
     85% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    /* END: show again */
+    90% {
         opacity: 1;
         transform: scale(1.05);
     }
