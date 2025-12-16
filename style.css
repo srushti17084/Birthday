@@ -161,3 +161,32 @@ button {
         transform: scale(1);
     }
 }
+
+
+/* ================= MOBILE RESPONSIVE CARD ================= */
+@media (max-width: 768px) {
+
+    .card {
+        max-width: 90%;        /* Reduce width */
+        padding: 20px;         /* Less inner space */
+        margin-top: 10vh;      /* Better vertical position */
+        border-radius: 20px;   /* Slightly smaller corners */
+    }
+
+    .name {
+        font-size: 2rem;       /* Smaller heading */
+    }
+
+    .age {
+        font-size: 1.1rem;     /* Smaller subheading */
+    }
+
+    .message {
+        font-size: 0.9rem;     /* Smaller text */
+    }
+
+    button {
+        padding: 10px 22px;    /* Smaller button */
+        font-size: 0.9rem;
+    }
+}
